@@ -98,10 +98,10 @@ img {
 
 aside {
     display: flex;
-    width: 88vw;
+    width: 97vw;
     justify-self: center;
     padding-top: 12px;
-    padding-bottom: 12px;
+    padding-bottom: 10px;
 }
 
 aside p {
@@ -109,9 +109,9 @@ aside p {
 }
 
 .pins {
-    width: 88vw;
+    width: 97vw;
     margin: 20px auto;
-    columns: 5;
+    columns: 6;
     column-gap: 12px;
 }
 
