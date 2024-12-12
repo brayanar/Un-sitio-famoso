@@ -44,6 +44,20 @@ img {
     padding-right: 16px;
 }
 
+#inicio {
+    height: 45px;
+    border-radius: 30px;
+    background-color: black;
+    align-self: center;
+}
+
+#inicio p {
+    color: white;
+    padding-right: 0px;
+    align-self: center;
+    margin-top: 13px;
+}
+
 #busqueda {
     grid-area: c;
     display: flex;
