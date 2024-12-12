@@ -1,0 +1,165 @@
+
+body {
+    font-size: 17px;
+}
+
+main {
+    height: 60px;
+    display: flex;
+    padding-top: 3px;
+}
+
+.barrasuperior {
+    display: grid;
+    grid-template-columns: 2% 20% auto 10%;
+    align-self: center;
+    grid-template-areas: "a b c d";
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 100%;
+}
+
+img {
+    width: 40px;
+    height: auto;
+}
+
+#logobarra {
+    grid-area: a;
+    padding-right: 8px;
+    display: flex;
+    justify-content: center; 
+    height: 35px;
+    align-self: center;
+}
+
+#direcciones {
+    grid-area: b;
+    display: flex;
+
+}
+
+#direcciones div {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+#busqueda {
+    grid-area: c;
+    display: flex;
+    justify-items: flex-start;
+    background-color: rgba(190, 185, 185, 0.39);
+    border-radius: 50px;
+
+}
+
+#busqueda img {
+    width: 15px;
+    height: 15px;
+    align-self: center;
+    margin-left: 10px;
+    background-color: rgba(190, 185, 185, 0.39);
+}
+
+#buscar {
+    padding-left: 10px;
+}
+
+#menu {
+    grid-area: d;
+    display: flex;
+    justify-content: space-evenly;
+    padding-right: 10px;
+}
+
+#menu img {
+    width: 47px;
+    height: 37px;
+    align-self: center;
+}
+
+.p {
+    padding-right: 8px;
+}
+
+aside {
+    display: flex;
+    width: 88vw;
+    justify-self: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+aside p {
+    padding-right: 20px;
+}
+
+.pins {
+    width: 88vw;
+    margin: 20px auto;
+    columns: 5;
+    column-gap: 12px;
+}
+
+.pins div img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 7px;
+}
+
+
+@media screen and (max-width: 992px) {
+    .barrasuperior {
+        grid-template-columns: 5% 25% auto 18%;
+        width: 95vw;
+    }
+    .pins {
+        width: 75vw;
+        columns: 3;
+    }
+    aside {
+        width: 73vw;
+        padding-top: 10px;
+        padding-bottom: 0px;
+    }
+    aside p {
+        padding: 8px;
+        margin-bottom: 10px;
+    }
+    #logobarra {
+        padding-right: 0px;
+    }
+    #direcciones div {
+        padding-right: 0px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .barrasuperior {
+        grid-template-columns: 10% 15% auto 18%;
+        width: 80vw;
+    }
+    #logobarra {
+        margin-left: 10px;
+    }
+    #direcciones {
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    #direcciones div{
+        padding-left: 25px;
+    }
+    .pins {
+        width: 85vw;
+        columns: 2;
+    }
+    aside {
+        width: 85vw;
+        overflow: scroll;
+    }
+    aside p {
+       white-space: nowrap;
+       margin-left: 12px;
+       font-size: 18px;
+    }
+} 
