@@ -33,6 +33,28 @@ img {
     align-self: center;
 }
 
+nav ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+ul li {
+    display: inline-block;
+}
+
+li a {
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+#inicio {
+    color: white;
+}
+
+.p {
+    color: black;
+}
+
 #direcciones {
     grid-area: b;
     display: flex;
@@ -50,6 +72,7 @@ img {
     border-radius: 30px;
     background-color: black;
     align-self: center;
+    padding: 15px;
 }
 
 #inicio p {
@@ -65,7 +88,12 @@ img {
     justify-items: flex-start;
     background-color: #E9E9E9;
     border-radius: 50px;
+}
 
+#cajabusqueda {
+    margin-left: 5px;
+    background-color: #E9E9E9;
+    border: none;
 }
 
 #busqueda img {
@@ -94,7 +122,7 @@ img {
 }
 
 .p {
-    padding-right: 8px;
+    padding-left: 15px;
 }
 
 aside {
@@ -130,6 +158,9 @@ aside p {
 }
 
 @media screen and (max-width: 1100px) {
+    .barrasuperior {
+        grid-template-columns: 5% 25% auto 18%;
+    }
     #direcciones div {
         padding-right: 0px;
     }
@@ -163,9 +194,9 @@ aside p {
     }
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 870px) {
     .barrasuperior {
-        grid-template-columns: 5% 10% auto 18%;
+        grid-template-columns: 5% 15% auto 18%;
     }
     #direcciones div {
         padding-left: 10px;
