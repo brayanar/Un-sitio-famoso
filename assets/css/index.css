@@ -151,7 +151,7 @@ aside p {
 
 @media screen and (max-width: 576px) {
     .barrasuperior {
-        grid-template-columns: 10% 15% auto 18%;
+        grid-template-columns: 10% 20% auto 18%;
         width: 80vw;
     }
     #logobarra {
@@ -162,11 +162,17 @@ aside p {
         overflow: hidden;
     }
     #direcciones div{
-        padding-left: 20px;
+        padding-left: 25px;
         background-color: white;
     }
     #inicio p {
         color: black;
+    }
+    #explorar {
+        display: none;
+    }
+    #crear {
+        display: none;
     }
     #busqueda {
         margin-left: 10px;
@@ -178,6 +184,7 @@ aside p {
     aside {
         width: 85vw;
         overflow: scroll;
+        padding-top: 0px;
     }
     aside p {
        white-space: nowrap;
