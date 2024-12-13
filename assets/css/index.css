@@ -122,7 +122,17 @@ aside p {
     margin-bottom: 7px;
 }
 
+@media screen and (max-width : 1200px){
+    #direcciones div {
+        padding-right: 5px;
+    }
+}
 
+@media screen and (max-width: 1100px) {
+    #direcciones div {
+        padding-right: 0px;
+    }
+}
 @media screen and (max-width: 992px) {
     .barrasuperior {
         grid-template-columns: 5% 25% auto 18%;
@@ -146,6 +156,27 @@ aside p {
     }
     #direcciones div {
         padding-right: 0px;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .barrasuperior {
+        grid-template-columns: 5% 10% auto 18%;
+    }
+    #direcciones div {
+        padding-left: 10px;
+    }
+    #explorar {
+        display: none;
+    }
+    #crear {
+        display: none;
+    }
+    aside {
+        white-space: nowrap;
+        margin-left: 12px;
+        font-size: 18px;
+        overflow: scroll;
     }
 }
 
