@@ -243,6 +243,9 @@ aside p {
     #busqueda {
         margin-left: 10px;
     }
+    #busqueda input {
+        width: 50px;
+    }
     .pins {
         width: 85vw;
         columns: 2;
