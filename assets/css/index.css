@@ -36,7 +36,7 @@ img {
 #direcciones {
     grid-area: b;
     display: flex;
-
+    justify-content: space-evenly;
 }
 
 #direcciones div {
@@ -45,6 +45,7 @@ img {
 }
 
 #inicio {
+    width: 50px;
     height: 45px;
     border-radius: 30px;
     background-color: black;
